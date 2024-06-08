@@ -16,5 +16,5 @@ Uso
 
 1. Descarga el repositorio git
 2. Crea la base de datos ejecutando el "BBDD.sql"
-3. Abre apirest/src/main/java/es/upm/apirest/ApirestApplication.java y ejecuta
+3. Abre apirest/src/main/java/es/upm/apirest/ApirestApplication.java y ejecuta (si no funciona por culpa de dependencias del pom cambia la version de java al 17)
 4. Navegar al directorio del frontend: cd ../frontend y ejecuta npm start
