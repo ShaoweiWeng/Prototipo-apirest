@@ -10,6 +10,6 @@ CREATE TABLE Alumno (
   apellido1 VARCHAR(100),
   apellido2 VARCHAR(100),
   email VARCHAR(100),
-  PRIMARY KEY (id_empleado));
+  PRIMARY KEY (id_alumno));
   
   
