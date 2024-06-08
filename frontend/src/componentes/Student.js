@@ -13,8 +13,10 @@ export default function Student() {
     const [email, setEmail] = useState('')
 
     const [alumnos, setStudents] = useState([])
-
     const paperStyle = { padding: '50px 20px', width: 600, margin: "20px auto" }
+    /**
+     * Manda una solicitud POST registrando al alumno con sus campos correspondientes
+     */
     const handleClick = (e) => {
         e.preventDefault()
         const student = { id_alumno, nombre, apellido1, apellido2, email }
@@ -25,6 +27,9 @@ export default function Student() {
 
         })
     }
+    /**
+     * Manda una solicitud GET obteniendo toda la lista de alumnos que hay en la BBDD
+     */
     useEffect(() => {
         fetch("http://localhost:8080/alumnos")
             .then(res => res.json())
@@ -72,7 +77,6 @@ export default function Student() {
             <h1>Estudiantes Matriculados</h1>
 
             <Paper elevation={3} style={paperStyle}>
-
                 {alumnos.map(student => (
                     <Paper elevation={6} style={{ margin: "10px", padding: "15px", textAlign: "left" }} key={student.id}>
                         Id:{student.id_alumno}<br />
